@@ -1,0 +1,14 @@
+Map limitations in golang
+Mark and swipe Algo -> can we use with map 
+if valid gc should not active with map
+
+Map implementation 
+C++ vs golang
+GC : should not swipe Map
+
+
+cache -> Map 
+
+Git lens
+
+linting 

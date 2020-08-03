@@ -1,0 +1,17 @@
+// Unlike the array size of slice can be changed 
+// There is no need to specify the size of slice
+
+package main 
+
+import (
+        "fmt"
+    )
+
+func main() {
+    var car []string
+        
+    car = []string{"BMW", "Lexus", "Bugatti", "Tesla", "Audi", "Jaguar"}
+    fmt.Println(car)
+    append(car, "Land Rover")
+    fmt.Println(car)
+}
