@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>form</title>
+    </head>
+    <body>
+
+        <header>
+            {{if.Submissions}}
+                {{range $key, $value := .Submissions}}
+                    <p> {{$key}}</p>
+                    <ul>
+                        {{range $value}} <li><em>{{.}}</em></li>{{end}}
+                    </ul>
+                {{end}}
+            {{end}} 
+        </header>
+
+        <form action="/" method="POST">
+            <input type="text" name="name" placeholder="Enter Name">
+            <input type="button" name="btn-submit" value="button">
+        </form>
+    </body>
+</html>
