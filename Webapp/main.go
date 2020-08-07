@@ -49,6 +49,7 @@ func detailsHandler(res http.ResponseWriter, req *http.Request) {
 func addUser(res http.ResponseWriter, req *http.Request) {
 	res.Header().Set("Content-Type", "application/json")
 	var user User
+	fmt.Println(req.Body)
 	_ = json.NewDecoder(req.Body).Decode(&user)
 
 	for _, getuser := range readData() {
@@ -76,7 +77,7 @@ func updateUser(res http.ResponseWriter, req *http.Request) {
 			return
 		}
 	}
-	json.NewEncoder(res).Encode("Update : No Matching data!")
+	json.NewEncoder(res).Encode("Updata No matching data")
 }
 
 func deleteUser(res http.ResponseWriter, req *http.Request) {
