@@ -1,0 +1,17 @@
+package: .
+import:
+- package: Rest/romanNumerals
+- package: github.com/Shopify/sarama
+  version: ~1.27.0
+- package: github.com/gocql/gocql
+- package: github.com/golang/mock
+  version: ~1.4.4
+  subpackages:
+  - gomock
+- package: github.com/gorilla/mux
+  version: ~1.7.4
+- package: github.com/mattn/go-sqlite3
+  version: ~2.0.6
+- package: github.com/wvanbergen/kafka
+  subpackages:
+  - consumergroup
