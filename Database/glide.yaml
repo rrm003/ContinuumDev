@@ -1,0 +1,10 @@
+package: .
+import:
+- package: github.com/Shopify/sarama
+  version: ~1.27.0
+- package: github.com/gocql/gocql
+- package: github.com/gorilla/mux
+  version: ~1.7.4
+- package: github.com/wvanbergen/kafka
+  subpackages:
+  - consumergroup
