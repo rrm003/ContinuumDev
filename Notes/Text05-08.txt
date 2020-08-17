@@ -1,0 +1,7 @@
+Stock data
+open api
+
+2 application communicate
+Pipe
+
+Kafka
